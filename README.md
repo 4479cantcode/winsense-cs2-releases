@@ -4,6 +4,8 @@ This public repository is the download and update channel for Winsense CS2. The 
 
 Download [the latest release](https://github.com/4479cantcode/winsense-cs2-releases/releases/latest) and run **WinsenseCS2Bootstrap.exe**. The launcher checks for updates each time it starts, verifies the downloaded package, installs it under your Windows user profile, and opens Winsense. If an update cannot finish, it offers Retry and Manual update.
 
+Keep the launcher running while you use Winsense. It stays out of sight and checks CS2 when the game starts. If CS2 changes before a compatible Winsense release is ready, the launcher shows an update-coming-soon page with a retry option and a link to [discord.gg/4479](https://discord.gg/4479).
+
 Each release contains:
 
 | Asset | Use |

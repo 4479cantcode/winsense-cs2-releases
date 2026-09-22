@@ -1,5 +1,11 @@
 # Changelog
 
+## v1.0.2
+
+- Updated the CS2 dashboard and account experience.
+- Keeps the verified automatic updater and current offset compatibility checks.
+- Includes the latest tested core and dashboard distribution build.
+
 ## v1.0.1
 
 - The launcher checks CS2 compatibility when the game starts and watches for later game launches while Winsense runs.

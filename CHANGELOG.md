@@ -1,5 +1,12 @@
 # Changelog
 
+## v1.0.3
+
+- Adds CS2 session logging to the 4479 licence service, matching the Roblox external.
+- While a licence is active, the core reports session start, a heartbeat every 60 seconds, and exit, with the device ID, client version and your linked 4479 account. The server records the IP address it sees.
+- Licence keys are never sent in session logs, and logging problems never block a valid licence.
+- Includes the current tested core, dashboard, and launcher.
+
 ## v1.0.2
 
 - Updated the CS2 dashboard and account experience.

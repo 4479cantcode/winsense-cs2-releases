@@ -1,5 +1,19 @@
 # Changelog
 
+## v1.0.5
+
+- Fixed the HUD radar and bomb overlay failing to appear. The overlay window was created once and never rebuilt when it resized to the game window, so anything drawn outside the stale backbuffer was clipped away. It now rebuilds its swap chain on every resize.
+- Reworked the 2D tactical radar: range rings, a view cone, off-radar enemies that clamp to the edge instead of disappearing, health rings, a planted-bomb marker with site and countdown, and no more collision with the other HUD panels.
+- Reworked the bomb HUD: it now uses the bomb's real timer length instead of assuming 40 seconds, shows a proper site badge, a defuse countdown, and escalates from white to amber to a pulsing red in the final ten seconds.
+- Bunny hop now writes the usercmd jump button directly. The old injected keypress had to land inside a one-tick window and be delivered to the foreground thread, which it usually was not.
+- Topmost now re-asserts itself, so the overlay stays above the game after fullscreen switches and focus changes instead of silently dropping behind it.
+- The overlay FPS cap and entity snapshot rate now default to maximum, and a setting of 0 genuinely means uncapped as the label claims.
+- Dashboard live trends are now individual cards with a title above each graph, current value, min/avg/max, hover readout, and pause and clear controls. A new snapshot-cost chart was added.
+- The dashboard status bar now shows a live bomb timer and ping instead of entity count and IPC state, and the runtime health panel no longer reports false failures while CS2 is closed.
+- Added a Discord button that opens the community invite, a collapsible language selector that sits beside it, and a theme dropdown with circle previews and four new palettes.
+- The dashboard now launches the newest core build instead of the first one it finds on disk, which is what caused earlier fixes to appear missing.
+- Everything now reports 1.0.5.
+
 ## v1.0.4
 
 - Unified the version number across the app, the core and the release channel. Everything now reports 1.0.4.

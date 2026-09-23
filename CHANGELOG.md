@@ -1,5 +1,11 @@
 # Changelog
 
+## v1.0.4
+
+- Unified the version number across the app, the core and the release channel. Everything now reports 1.0.4.
+- The dashboard no longer shows 2.0.0, and the core licence report no longer sends 2.0.1. Both now send 1.0.4, so the dashboard, the website and the admin diagnostics view agree with the release version.
+- Includes the current tested core, dashboard, and launcher.
+
 ## v1.0.3
 
 - Adds CS2 session logging to the 4479 licence service, matching the Roblox external.

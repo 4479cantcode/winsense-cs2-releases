@@ -1,5 +1,20 @@
 # Changelog
 
+## v1.0.8
+
+- Refreshed CS2 build 14183 offsets and verified all embedded values against the current dumper.
+- Rebuilt match timing and dashboard telemetry for accurate round number, round timer, phase, ping, entity count, and live snapshot health.
+- Added draggable, lockable, and resizable HUD panels. Positions, widths, and lock state now persist per config.
+- Expanded radar sizing from 32 to 1000 pixels and added resize grips to the radar and six HUD panels.
+- Redesigned the dashboard around per-tab presets and moved advanced controls into focused presets.
+- Added compact narrow-window layouts, a smaller key screen and minimum window size, interface scaling, synchronized dashboard topmost controls, and custom in-panel scrollbars.
+- Added default-value markers to sliders and inline numeric entry by clicking the displayed value.
+- Improved overlay reliability, topmost behavior, secondary-monitor support, uncapped FPS pacing, snapshot latency, and device-loss recovery.
+- Fixed ESP text sizing, FOV defaults and world/viewmodel updates, snaplines, team-color behavior, knives, bomb-carrier filtering, crouched head height, and glove finishes.
+- Fixed aimbot smoothing and autofire timing, triggerbot hold/burst behavior, movement edge cases, damage-log totals, and round-number fallbacks.
+- Hardened licence expiry handling, saved-key verification, transient failure behavior, IPC reconnects, config loading, and UI crash recovery.
+- Added four dashboard themes and improved skin, grenade-helper, match, spectator, damage, watermark, keybind, and player-list panels.
+
 ## v1.0.6
 
 - Fixed the launcher wrongly reporting "CS2 update coming soon" on current game builds. The build-number sanity window was 10,000-100,000, but CS2 passed 1,000,000, so every current build was rejected as incompatible even when the offsets matched exactly.

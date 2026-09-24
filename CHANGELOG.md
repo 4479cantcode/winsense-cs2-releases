@@ -1,5 +1,15 @@
 # Changelog
 
+## v1.0.6
+
+- Fixed the launcher wrongly reporting "CS2 update coming soon" on current game builds. The build-number sanity window was 10,000-100,000, but CS2 passed 1,000,000, so every current build was rejected as incompatible even when the offsets matched exactly.
+- A CS2 build that has not populated its global variables yet, such as the main menu or between rounds, is now treated as still loading and retried instead of being called incompatible.
+- Updated every embedded CS2 offset to the current dump. All 143 embedded values now match.
+- The dashboard now reports the live overlay state: above the game, hidden, or behind the game, and warns when the game appears to be running exclusive fullscreen, where no overlay can sit on top.
+- Redesigned the launcher loading and update screens with clearer hierarchy, a live download percentage, a stage line describing the current step, and a version chip.
+- Replaced the launcher Discord button with a Discord icon in both the loading and update screens.
+- Launcher updated to 1.2.0. Everything else now reports 1.0.6.
+
 ## v1.0.5
 
 - Fixed the HUD radar and bomb overlay failing to appear. The overlay window was created once and never rebuilt when it resized to the game window, so anything drawn outside the stale backbuffer was clipped away. It now rebuilds its swap chain on every resize.

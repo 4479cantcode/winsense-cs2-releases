@@ -1,5 +1,12 @@
 # Changelog
 
+## v1.1.0
+
+- The dashboard is now required: the core only runs while the Winsense UI is open, and closing the dashboard stops the core, overlay and tray immediately.
+- A crashed or force-closed dashboard is also cleaned up automatically after a short grace period, so no core is left running in the background.
+- Default aimbot activation key is now X instead of Mouse 5. Triggerbot stays disabled by default.
+- Keeps the v1.0.9 CS2 offsets, launcher compatibility snapshot and standard release hardening (no PDB debug info, no packers).
+
 ## v1.0.9
 
 - Refreshed CS2 offsets and launcher compatibility snapshot; no gameplay or dashboard behavior changes from v1.0.8.

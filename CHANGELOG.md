@@ -1,5 +1,12 @@
 # Changelog
 
+## v1.0.9
+
+- Refreshed CS2 offsets and launcher compatibility snapshot; no gameplay or dashboard behavior changes from v1.0.8.
+- Standard release hardening only: release binaries no longer emit PDB debug information.
+- No packers, runtime cryptors, or updater-format changes were introduced.
+- Preserves the normal verified update format: bootstrapper, signed package ZIP, and manifest.
+
 ## v1.0.8
 
 - Refreshed CS2 build 14183 offsets and verified all embedded values against the current dumper.
